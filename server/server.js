@@ -35,7 +35,7 @@ app.use('/api/user', userRouter);
 //     console.log(`Server is running on port`), PORT;
 // });
 
-onst PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 8000;
 
 // Only listen if not running on Vercel (i.e., not in serverless)
 if (process.env.NODE_ENV !== 'production') {
