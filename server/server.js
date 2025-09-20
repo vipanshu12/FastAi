@@ -30,12 +30,13 @@ app.use(requireAuth());
 app.use('/api/ai', aiRouter)
 app.use('/api/user', userRouter);
 
-    const PORT = process.env.PORT || 8000;
+    // const PORT = process.env.PORT || 8000;
+
+
+const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => {
     console.log(`Server is running on port`), PORT;
 });
-
-const PORT = process.env.PORT || 8000;
 
 // Only listen if not running on Vercel (i.e., not in serverless)
 if (process.env.NODE_ENV !== 'production') {
